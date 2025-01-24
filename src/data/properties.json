@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Villa",
+    "location": " Delhi NCR",
+    "price": "$1,000,000",
+    "imageUrl": "https://destinationcompress.s3.ap-south-1.amazonaws.com/74041a8e-72a7-4f93-ae68-40004302ba19.jpg",
+    "description": "A luxurious modern villa with stunning views and amenities."
+  },
+  {
+    "id": 2,
+    "name": "Modern Villa",
+    "location": " South Delh",
+    "price": "$1,000,000",
+    "imageUrl": "https://destinationcompress.s3.ap-south-1.amazonaws.com/8195002e-23e4-4bd5-8680-79a4090365ed.jpeg",
+    "description": "A luxurious modern villa with stunning views and amenities."
+  },
+  {
+    "id": 3,
+    "name": "Modern Villa",
+    "location": " Phase II, Chatrapur Enclave",
+    "price": "$1,000,000",
+    "imageUrl": "https://destinationcompress.s3.ap-south-1.amazonaws.com/46538dd0-bfc1-476c-99b9-d8e22669d25c.jpg",
+    "description": "A luxurious modern villa with stunning views and amenities."
+  },
+  {
+    "id": 4,
+    "name": "Cozy Apartment",
+    "location": "New York",
+    "price": "$500,000"
+  },
+  { "id": 3, "name": "Beach House", "location": "Florida", "price": "$750,000" }
+]
