@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { PropertiesType } from "@/utils/types";
 import { SubHeader } from "@/components/common/subHeader/SubHeader";
 import Head from "next/head";
 
 const Properties = () => {
   const [propertie, setPropertie] = useState<PropertiesType[]>([]);
-  const { push } = useRouter();
 
   const fetchData = async () => {
     try {
