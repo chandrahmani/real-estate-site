@@ -1,25 +1,14 @@
 import { SubHeader } from "@/components/common/subHeader/SubHeader";
 import Head from "next/head";
-import { useRouter } from "next/navigation";
 
 const Rent = () => {
-  const { push } = useRouter();
   return (
     <div className="min-h-screen bg-gray-100">
       <SubHeader
         title="Properties for Sale"
-        children={
-          <div>
-            <button
-              onClick={() => push("/")}
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >
-              Back Page
-            </button>
-          </div>
-        }
-      />
+        subtitle="chand"
+        buttonLink="/"
+      ></SubHeader>
 
       <Head>
         <title>Rent Properties - Real Estate Website</title>

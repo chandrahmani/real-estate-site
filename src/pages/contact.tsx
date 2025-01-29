@@ -1,9 +1,7 @@
 import { SubHeader } from "@/components/common/subHeader/SubHeader";
 import Head from "next/head";
-import { useRouter } from "next/navigation";
 
 const Contact = () => {
-  const { push } = useRouter();
   return (
     <div className="min-h-screen bg-gray-100">
       <Head>
@@ -13,18 +11,9 @@ const Contact = () => {
 
       <SubHeader
         title="Properties for Sale"
-        children={
-          <div>
-            <button
-              onClick={() => push("/")}
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >
-              Back Page
-            </button>
-          </div>
-        }
-      />
+        subtitle="back"
+        buttonLink="/"
+      ></SubHeader>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="bg-white p-6 rounded-lg shadow-md">

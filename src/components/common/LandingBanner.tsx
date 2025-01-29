@@ -5,28 +5,19 @@ import { SubHeader } from "./subHeader/SubHeader";
 export const LandingBanner = () => {
   const { push } = useRouter();
 
-  const handleCall = () => {
-    window.open(
-      `https://wa.me/+8709517725?text=Hi I'm%20interested%20in%20-Chand_Rahmani.`,
-      "_blank"
-    );
-  };
+  // const handleCall = () => {
+  //   window.open(
+  //     `https://wa.me/+8709517725?text=Hi I'm%20interested%20in%20-Chand_Rahmani.`,
+  //     "_blank"
+  //   );
+  // };
   return (
     <>
       <SubHeader
         title="Chand Rahmani"
-        children={
-          <div>
-            <button
-              onClick={handleCall}
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >
-              Call Me
-            </button>
-          </div>
-        }
-      />
+        subtitle="back"
+        buttonLink="/"
+      ></SubHeader>
       <Head>
         <title></title>
         <meta name="description" content="Browse real estate" />
