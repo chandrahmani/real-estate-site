@@ -1,3 +1,4 @@
+import { SubHeader } from "@/components/common/subHeader/SubHeader";
 import Head from "next/head";
 
 const Contact = () => {
@@ -8,9 +9,14 @@ const Contact = () => {
         <meta name="description" content="Get in touch with us" />
       </Head>
 
+      <SubHeader
+        title="Properties for Sale"
+        subtitle="back"
+        buttonLink="/"
+      ></SubHeader>
+
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
           <form className="space-y-4">
             <div>
               <label

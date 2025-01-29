@@ -1,8 +1,15 @@
+import { SubHeader } from "@/components/common/subHeader/SubHeader";
 import Head from "next/head";
 
 const Rent = () => {
   return (
     <div className="min-h-screen bg-gray-100">
+      <SubHeader
+        title="Properties for Sale"
+        subtitle="chand"
+        buttonLink="/"
+      ></SubHeader>
+
       <Head>
         <title>Rent Properties - Real Estate Website</title>
         <meta
@@ -12,7 +19,6 @@ const Rent = () => {
       </Head>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <h1 className="text-3xl font-bold mb-6">Properties for Rent</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <img
