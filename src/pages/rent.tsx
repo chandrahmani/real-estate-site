@@ -4,19 +4,18 @@ import Head from "next/head";
 const Rent = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <SubHeader
-        title="Properties for Sale"
-        subtitle="chand"
-        buttonLink="/"
-      ></SubHeader>
-
       <Head>
-        <title>Rent Properties - Real Estate Website</title>
+        <title>rent properties-real estate website</title>
         <meta
           name="description"
           content="Explore properties available for rent."
         />
       </Head>
+      <SubHeader
+        title="Properties for rent"
+        subtitle="Back"
+        buttonLink="/buy"
+      ></SubHeader>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

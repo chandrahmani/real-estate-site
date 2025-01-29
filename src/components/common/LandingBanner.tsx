@@ -15,8 +15,8 @@ export const LandingBanner = () => {
     <>
       <SubHeader
         title="Chand Rahmani"
-        subtitle="back"
-        buttonLink="/"
+        subtitle="Properties"
+        buttonLink="/properties"
       ></SubHeader>
       <Head>
         <title></title>
