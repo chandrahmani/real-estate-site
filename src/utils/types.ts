@@ -11,6 +11,5 @@ export type  PropertiesType = {
 export type SubHeaderType  ={
     title:string;
     subtitle:string;
-
     buttonLink:string
 }

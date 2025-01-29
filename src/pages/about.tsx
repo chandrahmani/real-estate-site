@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <Head>
-        <title>About Us Real Estate Website</title>
+        <title>about us real estate website</title>
         <meta
           name="description"
           content="Learn more about our company and mission"
@@ -13,8 +13,8 @@ const About = () => {
       </Head>
       <SubHeader
         title="Properties for Sale"
-        subtitle="hh"
-        buttonLink="/"
+        subtitle="Back"
+        buttonLink="/contact"
       ></SubHeader>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="bg-white p-6 rounded-lg shadow-md">

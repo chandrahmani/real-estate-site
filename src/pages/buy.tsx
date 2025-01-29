@@ -10,7 +10,7 @@ const Buy = () => {
   const fetchData = async () => {
     try {
       const { data } = await axios.get("/api/properties");
-      console.log("ds", data);
+      console.log(data);
       setBuys(data);
     } catch (error) {
       console.log(error);
@@ -23,12 +23,12 @@ const Buy = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <Head>
-        <title>Buy Properties</title>
-        <meta name="description" content="Browse properties for sale" />
+        <title>buy properties</title>
+        <meta name="description" content="contact" />
       </Head>
       <SubHeader
-        title="Properties for Sale"
-        subtitle="sdfsd"
+        title="Properties for buy"
+        subtitle="Back"
         buttonLink="/"
       ></SubHeader>
 
