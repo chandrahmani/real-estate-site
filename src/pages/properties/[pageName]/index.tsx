@@ -30,12 +30,12 @@ const PropertyDetails = () => {
     query && fetchData();
   }, [query]);
 
-  const handleCall = () => {
-    window.open(
-      `https://wa.me/+8709517725?text=Hi I'm%20interested%20in%20-Chand_Rahmani.`,
-      "_blank"
-    );
-  };
+  // const handleCall = () => {
+  //   window.open(
+  //     `https://wa.me/+8709517725?text=Hi I'm%20interested%20in%20-Chand_Rahmani.`,
+  //     "_blank"
+  //   );
+  // };
   if (!property) {
     return <h1>Propertys Is Not available</h1>;
   }

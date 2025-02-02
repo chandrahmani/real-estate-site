@@ -19,6 +19,8 @@ export default function handler(req: NextApiRequest,res: NextApiResponse,) {
 
     return res.status(200).json({message: "Message sent Successfully"})
   }catch(error){
+    console.log(error)
     return res.status(200).json({message: "Message sending message"})
+  
   }
 }
