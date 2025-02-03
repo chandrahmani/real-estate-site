@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-100 text-white p-4 fixed w-full top-0 z-50 shadow-md text-white p-4 z-50">
+    <nav className="bg-blue-100 text-white shadow-md text-white p-4 z-50">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -55,20 +55,20 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className=" md:hidden">
+          <div className="px-7 pt-5 w-full pb-3 space-y-1 sm:px-3 ">
             <Link href="/buy">
-              <span className="block text-gray-800 hover:text-blue-600">
+              <span className="block p-2 mb-4 bg-blue-500 text-white hover:bg-blue-200 hover:text-blue-600">
                 Buy
               </span>
             </Link>
             <Link href="/rent">
-              <span className="block text-gray-800 hover:text-blue-600">
+              <span className="block p-2 mb-4 bg-blue-500 text-white hover:bg-blue-200 hover:text-blue-600">
                 Rent
               </span>
             </Link>
             <Link href="/contact">
-              <span className="block text-gray-800 hover:text-blue-600">
+              <span className="block p-2 bg-blue-500 text-white hover:bg-blue-200 hover:text-blue-600">
                 Contact
               </span>
             </Link>

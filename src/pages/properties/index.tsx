@@ -27,11 +27,7 @@ const Properties = () => {
         <title>Properties</title>
         <meta name="description" content="Browse real estate" />
       </Head>
-      <SubHeader
-        title="Available Properties"
-        subtitle="Back"
-        buttonLink="/"
-      ></SubHeader>
+      <SubHeader title="Available Properties" subtitle="Back" buttonLink="/" />
       <main className="container mx-auto px-4 py-6 ">
         <div className="space-y-4">
           {properties.map((property) => (

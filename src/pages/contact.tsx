@@ -44,19 +44,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 ">
       <Head>
         <title>contact us</title>
         <meta name="description" content="Get in touch with us" />
       </Head>
 
-      <SubHeader
-        title="Properties for contact"
-        subtitle="Back"
-        buttonLink="/rent"
-      ></SubHeader>
+      <SubHeader title="Contact Us" subtitle="Back" buttonLink="/rent" />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
