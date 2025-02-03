@@ -1,34 +1,31 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { PropertiesType } from "@/utils/types";
 
 const PropertyDetails = () => {
-  const [property, setPropertie] = useState<any>(null);
+  const [property, setPropertie] = useState<PropertiesType | null>(null);
   const { query } = useRouter();
 
   const fetchData = async () => {
+    if (!query.pageName) return;
+
     try {
       const { data } = await axios.get("/api/properties");
 
-      const selectedName = data.filter(
-        (item: { pageName: any }) => item.pageName === query.pageName
+      const selectedName = data.find(
+        (item: PropertiesType) => item.pageName === query.pageName
       );
 
-      if (selectedName && selectedName.length > 0) {
-        setPropertie(selectedName[0]);
-      } else {
-        setPropertie(null);
-      }
-
-      setPropertie(selectedName[0]);
+      setPropertie(selectedName || null);
     } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    query && fetchData();
-  }, [query]);
+    if (query.pageName) fetchData();
+  }, [query.pageName]);
 
   // const handleCall = () => {
   //   window.open(
@@ -51,11 +48,10 @@ const PropertyDetails = () => {
             <p className="mt-4 text-gray-500">{property?.description}.</p>
 
             <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              <div
-                key={property?.name}
-                className="border-t border-gray-200 pt-4"
-              >
-                <dt className="font-medium text-gray-900">{property?.name}</dt>
+              <div key={property?.id} className="border-t border-gray-200 pt-4">
+                <dt className="font-medium text-gray-900">
+                  {property?.pageName}
+                </dt>
                 <dd className="mt-2 text-sm text-gray-500">
                   {property.description}
                 </dd>
