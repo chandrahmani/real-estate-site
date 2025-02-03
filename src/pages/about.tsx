@@ -12,7 +12,7 @@ const About = () => {
         />
       </Head>
       <SubHeader
-        title="Properties for Sale"
+        title="About Us"
         subtitle="Back"
         buttonLink="/contact"
       ></SubHeader>

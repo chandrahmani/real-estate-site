@@ -1,15 +1,26 @@
 
 
 export type  PropertiesType = {
-    id: number;
-    name: string;
-    location:string;
-    imageUrl: string;
-    price: string
+  id: number;
+  pageName:string;
+  location: string;
+  price: number; 
+  bedrooms?: number;
+  bathrooms?: number;
+  avatar:string;
+  area?: number;
+  images: { src: string }[];
+  description: string;
+
 }
 
 export type SubHeaderType  ={
     title:string;
     subtitle:string;
     buttonLink:string
+}
+
+
+export type SubLoaderType  ={
+    loading: boolean
 }

@@ -1,33 +1,59 @@
 [
   {
     "id": 1,
-    "name": "Modern Villa",
-    "location": " Delhi NCR",
-    "price": "$1,000,000",
-    "imageUrl": "https://destinationcompress.s3.ap-south-1.amazonaws.com/74041a8e-72a7-4f93-ae68-40004302ba19.jpg",
-    "description": "A luxurious modern villa with stunning views and amenities."
+    "pageName": "Luxury Apartment",
+    "location": "New Delhi",
+    "price": 500000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "avtar": "https://destinationcompress.s3.ap-south-1.amazonaws.com/8195002e-23e4-4bd5-8680-79a4090365ed.jpeg",
+    "area": 1500,
+    "images": [
+      {
+        "src": "https://destinationcompress.s3.ap-south-1.amazonaws.com/8195002e-23e4-4bd5-8680-79a4090365ed.jpeg",
+        "alt": "hi"
+      },
+      {
+        "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/e4/7a/2b/delhi-luxury-apartments.jpg?w=700&h=-1&s=1",
+        "alt": "hi"
+      },
+      {
+        "src": "https://assets.savills.com/properties/IN3101053432/DSC_0241_l_gal.jpg",
+        "alt": "hi"
+      },
+      {
+        "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/496784985.jpg?k=d08ceb35ca0c2fa439ea18209f20bd0a14588d02d561d4c9355fd316d41e2e93&o=&hp=1",
+        "alt": "hi"
+      }
+    ],
+    "description": "Beautiful apartment in a prime location."
   },
   {
     "id": 2,
-    "name": "Modern Villa",
+    "pageName": "Cozy Apartment",
     "location": " South Delh",
-    "price": "$1,000,000",
-    "imageUrl": "https://destinationcompress.s3.ap-south-1.amazonaws.com/8195002e-23e4-4bd5-8680-79a4090365ed.jpeg",
-    "description": "A luxurious modern villa with stunning views and amenities."
-  },
-  {
-    "id": 3,
-    "name": "Modern Villa",
-    "location": " Phase II, Chatrapur Enclave",
-    "price": "$1,000,000",
-    "imageUrl": "https://destinationcompress.s3.ap-south-1.amazonaws.com/46538dd0-bfc1-476c-99b9-d8e22669d25c.jpg",
-    "description": "A luxurious modern villa with stunning views and amenities."
-  },
-  {
-    "id": 4,
-    "name": "Cozy Apartment",
-    "location": "New York",
-    "price": "$500,000"
-  },
-  { "id": 3, "name": "Beach House", "location": "Florida", "price": "$750,000" }
+    "price": 70000,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 1200,
+    "images": [
+      {
+        "src": "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+        "alt": "Apartment"
+      },
+      {
+        "src": "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+        "alt": "Apartment"
+      },
+      {
+        "src": "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+        "alt": "Apartment"
+      },
+      {
+        "src": "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+        "alt": "Apartment"
+      }
+    ],
+    "description": "A  modern villa with stunning views and amenities."
+  }
 ]
