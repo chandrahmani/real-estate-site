@@ -3,9 +3,14 @@ import properties from '../../../data/properties.json'
 
 type Data = {
     id: number;
-    name: string;
-    location:string;
-    price: string
+    pageName?: string;
+    location: string;
+    price: number | string; 
+    bedrooms?: number;
+    bathrooms?: number;
+    area?: number;
+    images?: { src: string }[];
+    description?: string;
 }
 
 export default function handler (

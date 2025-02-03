@@ -6,13 +6,13 @@ import { SubHeader } from "@/components/common/subHeader/SubHeader";
 import Head from "next/head";
 
 const Properties = () => {
-  const [propertie, setPropertie] = useState<PropertiesType[]>([]);
+  const [properties, setProperties] = useState<PropertiesType[]>([]);
 
   const fetchData = async () => {
     try {
       const { data } = await axios.get("/api/properties");
       console.log("ds", data);
-      setPropertie(data);
+      setProperties(data);
     } catch (error) {
       console.log(error);
     }
@@ -32,19 +32,20 @@ const Properties = () => {
         subtitle="Back"
         buttonLink="/"
       ></SubHeader>
-      <main className="container mx-auto px-4 py-6">
-        <ul className="space-y-4">
-          {propertie.map((property) => (
-            <li key={property.id} className="p-4 bg-white shadow rounded">
-              <h3 className="text-lg font-bold">{property.name}</h3>
+      <main className="container mx-auto px-4 py-6 ">
+        <div className="space-y-4">
+          {properties.map((property) => (
+            <div key={property.id} className="p-4 bg-white shadow rounded">
+              <h3 className="text-lg font-bold">{property.pageName}</h3>
               <p>Location: {property.location}</p>
               <p>Price: {property.price}</p>
-              <Link href={`/properties/${property.id}`}>
-                <span className="text-blue-500 underline">View Details</span>
+
+              <Link href={`/properties/${property.pageName}`}>
+                <span className="text-blue-500 underline ">View Details</span>
               </Link>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </main>
     </div>
   );
