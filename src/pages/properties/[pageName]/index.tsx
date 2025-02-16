@@ -27,12 +27,12 @@ const PropertyDetails = () => {
     if (query.pageName) fetchData();
   }, [query.pageName]);
 
-  // const handleCall = () => {
-  //   window.open(
-  //     `https://wa.me/+8709517725?text=Hi I'm%20interested%20in%20-Chand_Rahmani.`,
-  //     "_blank"
-  //   );
-  // };
+  const handleCall = () => {
+    window.open(
+      `https://wa.me/+8709517725?text=Hi I'm%20interested%20in%20-Chand_Rahmani.`,
+      "_blank"
+    );
+  };
   if (!property) {
     return <h1>Propertys Is Not available</h1>;
   }
@@ -45,9 +45,7 @@ const PropertyDetails = () => {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               {property?.location}
             </h2>
-            <p className="mt-4 text-gray-500">{property?.description}.</p>
-
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+            <dl className="mt-4 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               <div key={property?.id} className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   {property?.pageName}
@@ -62,6 +60,13 @@ const PropertyDetails = () => {
                 </div>
               </div>
             </dl>
+            <button
+              onClick={handleCall}
+              className="text-white bg-blue-700 mt-5 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 "
+              type="button"
+            >
+              Book Now
+            </button>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
